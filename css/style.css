@@ -1,0 +1,94 @@
+:root {
+    --primary: #ff8000;
+    --bg: #010101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: aliceblue;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1,4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color:white;
+}
+.navbar .navbar-logo span {
+    font-style: inherit;
+    color:var(--primary);
+}
+
+.navbar .navbar-nav a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+/* media Queries */
+
+/* laptop */
+@media(max-width :1366px){
+    html {font-size: 100%;}
+}
+/* tablet */
+@media(max-width :768px){
+    html {font-size: 65%;}
+}
+/* hp */
+@media(max-width :450px){
+    html {font-size: 55%;}
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    background-image: url(../img/fire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.hero .content h1 {
+    padding: 3rem 1 0.2rem;
+    text-align: center;
+    line-height: 1;
+    font-family:'Bungee spice',cursive;
+}
+.hero .content p {
+    margin-top: 1rem;
+}
+.hero .content iframe {
+    width: 100vh;
+    height: 80vh;
+    overflow:hidden;
+}
